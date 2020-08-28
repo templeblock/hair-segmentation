@@ -11,7 +11,7 @@ if __name__ == '__main__':
     converter = tf.lite.TFLiteConverter.from_keras_model_file(PATH_MODEL)
 
     converter.optimizations = [tf.lite.Optimize.DEFAULT]
-    converter.target_spec.supported_types = [tf.lite.constants.FLOAT16]
+#     converter.target_spec.supported_types = [tf.lite.constants.FLOAT16]
 
     tflite_model = converter.convert()
     open(PATH_MODEL_TFLITE, "wb").write(tflite_model)

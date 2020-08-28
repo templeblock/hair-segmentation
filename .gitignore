@@ -155,3 +155,8 @@ ckpt/
 !.vscode/extensions.json
 
 *.zip
+data/train
+data/val
+data/test
+data/CelebAMask-HQ
+checkpoints
